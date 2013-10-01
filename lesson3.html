@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>lesson2. vanilla JS</title>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--
+        To apply styles to the certain slides
+        set slide ID to get needed elements
+        -->
+    <style>
+        #Cover h2 {
+            margin:30px 0 0;
+            color:#FFF;
+            text-align:center;
+            font-size:70px;
+        }
+        #Cover p {
+            margin:10px 0 0;
+            text-align:center;
+            color:#FFF;
+            font-style:italic;
+            font-size:20px;
+        }
+        #Cover p a {
+            color:#FFF;
+        }
+        #Picture h2 {
+            color:#FFF;
+        }
+        #SeeMore h2 {
+            font-size:100px
+        }
+        #SeeMore img {
+            width:0.72em;
+            height:0.72em;
+        }
+    </style>
+</head>
+<body class="list">
+<header class="caption">
+    <h1>Ajax</h1>
+    <p>для Epic Skills</p>
+</header>
+
+<section class="slide cover" id="Cover"><div>
+    <h2 style="color:#061fa7; text-shadow:1px 1px 15px #fff; font-size: 3.5em"><b>Ajax</b></h2>
+    <p style="color:#062194; text-shadow:1px 1px 15px #fff; font-size: 1.1em; font-weight: bold; padding-left: 69px">Путь асинхронного программиста.</p>
+    <img src="pictures/lesson3/beginnings.jpg" alt="">
+    <!-- photo by John Carey, fiftyfootshadows.net -->
+</div></section>
+
+<section class="slide cover"><div>
+    <h2 style="color:#fff">почему тебя называют асинхронный?</h2>
+    <img src="pictures/lesson3/ajax.jpg" alt=""/>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Асинхронный - значит происходящий вне потока.</h2>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2 style="color:#061a6d; text-shadow:1px 1px 15px #fff">Разве такое возможно?</h2>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2 style="color:#061a6d; text-shadow:1px 1px 15px #fff">Да.</h2>
+</div></section>
+
+<section class="slide"><div>
+    <p>Преимущества:</p>
+    <ul>
+        <li class="next">cтраница не перезагружается;</li>
+        <li class="next">возможность отправлять данные на лету;</li>
+        <li class="next">возможность получать данные на лету;</li>
+    </ul>
+</div></section>
+
+<section class="slide cover"><div>
+    <p style="font-size:2.4em; font-weight: bold; color:#061a6d; text-shadow:1px 1px 15px #fff">..но что значит на лету?</p>
+    <img src="pictures/lesson3/send.jpg">
+</div></section>
+
+<section class="slide"><div>
+    <p>Полёт Ajax:</p>
+    <ul>
+        <li class="next"><i style="color:#70588b">Предполётная подготовка -></i> пользователь нажимает на кнопку</li>
+        <li class="next"><i style="color:#70588b">Взлёт -></i> улетает <em style="color:#70588b">запрос</em> за данными!</li>
+        <li class="next"><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> ".. дистпетчер. Говорит борт Ajax, полёт нормальный..."</li>
+        <li class="next"><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> пользователь продолжает пользоваться приложением</li>
+        <li class="next"><i style="color:#70588b">Посадка -></i> прилетает <em style="color:#70588b">ответ</em> от сервера!</li>
+        <li class="next"><i style="color:#70588b">Зал прилёта -></i> пользователь получает ранее запрошенные данные</li>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
+    <p>Полёт Ajax:</p>
+    <ul style="color:#cecece">
+        <li><i>Предполётная подготовка -></i> пользователь нажимает на кнопку</li>
+        <li><i>Взлёт -></i> улетает <b style="color:#70588b">запрос</b> за данными!</li>
+        <li><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> </li>
+        <li><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> </li>
+        <li><i>Посадка -></i> прилетает <b style="color:#70588b">ответ</b> от сервера!</li>
+        <li><i>Зал прилёта -></i> пользователь получает ранее запрошенные данные</li>
+    </ul>
+</div></section>
+
+<section class="slide cover"><div>
+    <h2 style="color:#ddd">Не верю!</h2>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <h2 style="color:#fff; float:right">Я тебе покажу!</h2>
+    <img src="pictures/lesson3/example.jpg">
+</div></section>                                   -
+
+<!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+<div class="progress"><div></div></div>
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+</body>
+</html>
