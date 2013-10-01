@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>lesson2. vanilla JS</title>
-    <meta charset="windows-1251">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=792, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
@@ -43,89 +44,89 @@
 <body class="list">
 <header class="caption">
     <h1>Ajax</h1>
-    <p>для Epic Skills</p>
+    <p>РґР»СЏ Epic Skills</p>
 </header>
 
 <section class="slide cover" id="Cover"><div>
     <h2 style="color:#061fa7; text-shadow:1px 1px 15px #fff; font-size: 3.5em"><b>Ajax</b></h2>
-    <p style="color:#062194; text-shadow:1px 1px 15px #fff; font-size: 1.1em; font-weight: bold; padding-left: 69px">Путь асинхронного программиста.</p>
+    <p style="color:#062194; text-shadow:1px 1px 15px #fff; font-size: 1.1em; font-weight: bold; padding-left: 69px">РџСѓС‚СЊ Р°СЃРёРЅС…СЂРѕРЅРЅРѕРіРѕ РїСЂРѕРіСЂР°РјРјРёСЃС‚Р°.</p>
     <img src="pictures/lesson3/beginnings.jpg" alt="">
     <!-- photo by John Carey, fiftyfootshadows.net -->
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color:#fff">почему тебя называют асинхронный?</h2>
+    <h2 style="color:#fff">РїРѕС‡РµРјСѓ С‚РµР±СЏ РЅР°Р·С‹РІР°СЋС‚ Р°СЃРёРЅС…СЂРѕРЅРЅС‹Р№?</h2>
     <img src="pictures/lesson3/ajax.jpg" alt=""/>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Асинхронный - значит происходящий вне потока.</h2>
+    <h2>РђСЃРёРЅС…СЂРѕРЅРЅС‹Р№ - Р·РЅР°С‡РёС‚ РїСЂРѕРёСЃС…РѕРґСЏС‰РёР№ РІРЅРµ РїРѕС‚РѕРєР°.</h2>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2 style="color:#061a6d; text-shadow:1px 1px 15px #fff">Разве такое возможно?</h2>
+    <h2 style="color:#061a6d; text-shadow:1px 1px 15px #fff">Р Р°Р·РІРµ С‚Р°РєРѕРµ РІРѕР·РјРѕР¶РЅРѕ?</h2>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2 style="color:#061a6d; text-shadow:1px 1px 15px #fff">Да.</h2>
+    <h2 style="color:#061a6d; text-shadow:1px 1px 15px #fff">Р”Р°.</h2>
 </div></section>
 
 <section class="slide"><div>
-    <p>Преимущества:</p>
+    <p>РџСЂРµРёРјСѓС‰РµСЃС‚РІР°:</p>
     <ul>
-        <li class="next">cтраница не перезагружается;</li>
-        <li class="next">возможность отправлять данные на лету;</li>
-        <li class="next">возможность получать данные на лету;</li>
+        <li class="next">cС‚СЂР°РЅРёС†Р° РЅРµ РїРµСЂРµР·Р°РіСЂСѓР¶Р°РµС‚СЃСЏ;</li>
+        <li class="next">РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РѕС‚РїСЂР°РІР»СЏС‚СЊ РґР°РЅРЅС‹Рµ РЅР° Р»РµС‚Сѓ;</li>
+        <li class="next">РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРѕР»СѓС‡Р°С‚СЊ РґР°РЅРЅС‹Рµ РЅР° Р»РµС‚Сѓ;</li>
     </ul>
 </div></section>
 
 <section class="slide cover"><div>
-    <p style="font-size:2.4em; font-weight: bold; color:#061a6d; text-shadow:1px 1px 15px #fff">..но что значит на лету?</p>
+    <p style="font-size:2.4em; font-weight: bold; color:#061a6d; text-shadow:1px 1px 15px #fff">..РЅРѕ С‡С‚Рѕ Р·РЅР°С‡РёС‚ РЅР° Р»РµС‚Сѓ?</p>
     <img src="pictures/lesson3/send.jpg">
 </div></section>
 
 <section class="slide"><div>
-    <p>Полёт Ajax:</p>
+    <p>РџРѕР»С‘С‚ Ajax:</p>
     <ul>
-        <li class="next"><i style="color:#70588b">Предполётная подготовка -></i> пользователь нажимает на кнопку</li>
-        <li class="next"><i style="color:#70588b">Взлёт -></i> улетает <em style="color:#70588b">запрос</em> за данными!</li>
-        <li class="next"><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> ".. дистпетчер. Говорит борт Ajax, полёт нормальный..."</li>
-        <li class="next"><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> пользователь продолжает пользоваться приложением</li>
-        <li class="next"><i style="color:#70588b">Посадка -></i> прилетает <em style="color:#70588b">ответ</em> от сервера!</li>
-        <li class="next"><i style="color:#70588b">Зал прилёта -></i> пользователь получает ранее запрошенные данные</li>
+        <li class="next"><i style="color:#70588b">РџСЂРµРґРїРѕР»С‘С‚РЅР°СЏ РїРѕРґРіРѕС‚РѕРІРєР° -></i> РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅР°Р¶РёРјР°РµС‚ РЅР° РєРЅРѕРїРєСѓ</li>
+        <li class="next"><i style="color:#70588b">Р’Р·Р»С‘С‚ -></i> СѓР»РµС‚Р°РµС‚ <em style="color:#70588b">Р·Р°РїСЂРѕСЃ</em> Р·Р° РґР°РЅРЅС‹РјРё!</li>
+        <li class="next"><i style="color:#70588b">РџРѕР»С‘С‚ -></i> <img src="pictures/lesson3/preloader.gif"> ".. РґРёСЃС‚РїРµС‚С‡РµСЂ. Р“РѕРІРѕСЂРёС‚ Р±РѕСЂС‚ Ajax, РїРѕР»С‘С‚ РЅРѕСЂРјР°Р»СЊРЅС‹Р№..."</li>
+        <li class="next"><i style="color:#70588b">РџРѕР»С‘С‚ -></i> <img src="pictures/lesson3/preloader.gif"> РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїСЂРѕРґРѕР»Р¶Р°РµС‚ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РїСЂРёР»РѕР¶РµРЅРёРµРј</li>
+        <li class="next"><i style="color:#70588b">РџРѕСЃР°РґРєР° -></i> РїСЂРёР»РµС‚Р°РµС‚ <em style="color:#70588b">РѕС‚РІРµС‚</em> РѕС‚ СЃРµСЂРІРµСЂР°!</li>
+        <li class="next"><i style="color:#70588b">Р—Р°Р» РїСЂРёР»С‘С‚Р° -></i> РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїРѕР»СѓС‡Р°РµС‚ СЂР°РЅРµРµ Р·Р°РїСЂРѕС€РµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ</li>
     </ul>
 </div></section>
 
 <section class="slide"><div>
-    <p>Полёт Ajax:</p>
+    <p>РџРѕР»С‘С‚ Ajax:</p>
     <ul style="color:#cecece">
-        <li><i>Предполётная подготовка -></i> пользователь нажимает на кнопку</li>
-        <li><i>Взлёт -></i> улетает <b style="color:#70588b">запрос</b> за данными!</li>
-        <li><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> </li>
-        <li><i style="color:#70588b">Полёт -></i> <img src="pictures/lesson3/preloader.gif"> </li>
-        <li><i>Посадка -></i> прилетает <b style="color:#70588b">ответ</b> от сервера!</li>
-        <li><i>Зал прилёта -></i> пользователь получает ранее запрошенные данные</li>
+        <li><i>РџСЂРµРґРїРѕР»С‘С‚РЅР°СЏ РїРѕРґРіРѕС‚РѕРІРєР° -></i> РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅР°Р¶РёРјР°РµС‚ РЅР° РєРЅРѕРїРєСѓ</li>
+        <li><i>Р’Р·Р»С‘С‚ -></i> СѓР»РµС‚Р°РµС‚ <b style="color:#70588b">Р·Р°РїСЂРѕСЃ</b> Р·Р° РґР°РЅРЅС‹РјРё!</li>
+        <li><i style="color:#70588b">РџРѕР»С‘С‚ -></i> <img src="pictures/lesson3/preloader.gif"> </li>
+        <li><i style="color:#70588b">РџРѕР»С‘С‚ -></i> <img src="pictures/lesson3/preloader.gif"> </li>
+        <li><i>РџРѕСЃР°РґРєР° -></i> РїСЂРёР»РµС‚Р°РµС‚ <b style="color:#70588b">РѕС‚РІРµС‚</b> РѕС‚ СЃРµСЂРІРµСЂР°!</li>
+        <li><i>Р—Р°Р» РїСЂРёР»С‘С‚Р° -></i> РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїРѕР»СѓС‡Р°РµС‚ СЂР°РЅРµРµ Р·Р°РїСЂРѕС€РµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ</li>
     </ul>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color:#ddd">Не верю!</h2>
+    <h2 style="color:#ddd">РќРµ РІРµСЂСЋ!</h2>
     </br>
     </br>
     </br>
     </br>
     </br>
     </br>
-    <h2 style="color:#fff; float:right">Я тебе покажу!</h2>
+    <h2 style="color:#fff; float:right">РЇ С‚РµР±Рµ РїРѕРєР°Р¶Сѓ!</h2>
     <img src="pictures/lesson3/example.jpg">
 </div></section>                                   -
 
 <!--
     To hide progress bar from entire presentation
-    just remove “progress” element.
+    just remove вЂњprogressвЂќ element.
     -->
 <div class="progress"><div></div></div>
 <script src="shower/shower.min.js"></script>
-<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+<!-- Copyright В© 2013 Yours Truly, Famous Inc. -->
 </body>
 </html>
