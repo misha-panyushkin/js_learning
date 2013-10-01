@@ -3,7 +3,7 @@
 <head>
     <title>lesson2. vanilla JS</title>
 
-    <meta charset="windows-1251">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=792, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
@@ -43,40 +43,40 @@
 <body class="list">
 <header class="caption">
     <h1>vanilla JS</h1>
-    <p>для Epic Skills</p>
+    <p>РґР»СЏ Epic Skills</p>
 </header>
 <section class="slide cover" id="Cover"><div>
     <h2 style="color: #333"><i style="width:80px; height:80px; display:inline-block; background: url('pictures/lesson2/vanilla.gif') 11px top no-repeat; background-size: 80px"  ></i> vanilla <b style="color: #ba45cc; text-shadow: 2px 2px 2px #000;">JS</b></h2>
-    <p style="color: #ba45cc; font-size: 1.2em; font-weight: bold; text-shadow: 2px 2px 2px #000;">возвращение к истокам.</p>
+    <p style="color: #ba45cc; font-size: 1.2em; font-weight: bold; text-shadow: 2px 2px 2px #000;">РІРѕР·РІСЂР°С‰РµРЅРёРµ Рє РёСЃС‚РѕРєР°Рј.</p>
     <img src="pictures/lesson2/beginnings.jpg" alt="">
     <!-- photo by John Carey, fiftyfootshadows.net -->
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color:#555">Программирование</h2>
-    <h2 style="color:#555">- всего навсего <strong>последовательность действий</strong>.</h2>
+    <h2 style="color:#555">РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ</h2>
+    <h2 style="color:#555">- РІСЃРµРіРѕ РЅР°РІСЃРµРіРѕ <strong>РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РґРµР№СЃС‚РІРёР№</strong>.</h2>
     <img src="pictures/lesson2/dance.jpg" alt=""/>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color:#d00">Будем учится программировать?</h2>
+    <h2 style="color:#d00">Р‘СѓРґРµРј СѓС‡РёС‚СЃСЏ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°С‚СЊ?</h2>
     <img src="pictures/lesson2/learning.jpg" alt="">
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Переходим к действиям</h2>
+    <h2>РџРµСЂРµС…РѕРґРёРј Рє РґРµР№СЃС‚РІРёСЏРј</h2>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>То, что меняется</h2>
+    <h2>РўРѕ, С‡С‚Рѕ РјРµРЅСЏРµС‚СЃСЏ</h2>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Переменные</h2>
+    <h2>РџРµСЂРµРјРµРЅРЅС‹Рµ</h2>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Формируем слова</h2>
+    <h2>Р¤РѕСЂРјРёСЂСѓРµРј СЃР»РѕРІР°</h2>
     <code class="next">var</code>
     <code class="next">day</code>
     <code class="next">;</code>
@@ -106,139 +106,139 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Объявляем и присваиваем.</h2>
+    <h2>РћР±СЉСЏРІР»СЏРµРј Рё РїСЂРёСЃРІР°РёРІР°РµРј.</h2>
     <code>var day = 10,</code></br>
     &nbsp;&nbsp;&nbsp;&nbsp;<code>month = 07,</code></br>
     &nbsp;&nbsp;&nbsp;&nbsp;<code>year = 2013;</code></br>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Слабая типизация.</h2>
+    <h2>РЎР»Р°Р±Р°СЏ С‚РёРїРёР·Р°С†РёСЏ.</h2>
     <code>var day;</code></br>
     <code class="next">day = 10;</code></br>
     <code class="next">day = "10";</code></br>
-    <code class="next">day = "среда.";</code></br>
-    <code class="next">day = "третий день от воскресенья!";</code></br>
+    <code class="next">day = "СЃСЂРµРґР°.";</code></br>
+    <code class="next">day = "С‚СЂРµС‚РёР№ РґРµРЅСЊ РѕС‚ РІРѕСЃРєСЂРµСЃРµРЅСЊСЏ!";</code></br>
     </br>
-    <p class="next"><code>day = true;</code><note>&nbsp;&nbsp;// логическе значение</note></p>
+    <p class="next"><code>day = true;</code><note>&nbsp;&nbsp;// Р»РѕРіРёС‡РµСЃРєРµ Р·РЅР°С‡РµРЅРёРµ</note></p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Операции над переменными</h2>
+    <h2>РћРїРµСЂР°С†РёРё РЅР°Рґ РїРµСЂРµРјРµРЅРЅС‹РјРё</h2>
     <code>var year = 2013;</code>
-    <p class="next">Перенесёмся в будущее.
-        </br><code>year + 10;</code><em class="next">&nbsp;&nbsp; // Результат операции никуда не сохранен!</em>
+    <p class="next">РџРµСЂРµРЅРµСЃС‘РјСЃСЏ РІ Р±СѓРґСѓС‰РµРµ.
+        </br><code>year + 10;</code><em class="next">&nbsp;&nbsp; // Р РµР·СѓР»СЊС‚Р°С‚ РѕРїРµСЂР°С†РёРё РЅРёРєСѓРґР° РЅРµ СЃРѕС…СЂР°РЅРµРЅ!</em>
     </p>
-    <p class="next">Сохраняем результат.
+    <p class="next">РЎРѕС…СЂР°РЅСЏРµРј СЂРµР·СѓР»СЊС‚Р°С‚.
         </br><code>var future = year + 10;</code><em class="note">&nbsp;&nbsp; // future = 2023</em>
     </p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Слово не воробей!</h2>
+    <h2>РЎР»РѕРІРѕ РЅРµ РІРѕСЂРѕР±РµР№!</h2>
     <code>var future = 2023;</code>
-    <p class="next">Здесь всё понятно, полетели дальше.
+    <p class="next">Р—РґРµСЃСЊ РІСЃС‘ РїРѕРЅСЏС‚РЅРѕ, РїРѕР»РµС‚РµР»Рё РґР°Р»СЊС€Рµ.
         </br><code>var far_future = Future + 10;</code>
     </p>
-    <p class="next">&nbsp;&nbsp;Результат операции  - <mark>ошибка!</mark></p>
-    <p class="next">Назвался с маленькой буквы, носи такое имя.
+    <p class="next">&nbsp;&nbsp;Р РµР·СѓР»СЊС‚Р°С‚ РѕРїРµСЂР°С†РёРё  - <mark>РѕС€РёР±РєР°!</mark></p>
+    <p class="next">РќР°Р·РІР°Р»СЃСЏ СЃ РјР°Р»РµРЅСЊРєРѕР№ Р±СѓРєРІС‹, РЅРѕСЃРё С‚Р°РєРѕРµ РёРјСЏ.
         </br><code>var far_future = future + 10;</code>
     </p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Синтаксис</h2>
-    <p class="next"> Каждая фраза имеет логическое завершение - <code>;</code></p>
-    <p class="next"> Фразы располагаются друг под другом.
+    <h2>РЎРёРЅС‚Р°РєСЃРёСЃ</h2>
+    <p class="next"> РљР°Р¶РґР°СЏ С„СЂР°Р·Р° РёРјРµРµС‚ Р»РѕРіРёС‡РµСЃРєРѕРµ Р·Р°РІРµСЂС€РµРЅРёРµ - <code>;</code></p>
+    <p class="next"> Р¤СЂР°Р·С‹ СЂР°СЃРїРѕР»Р°РіР°СЋС‚СЃСЏ РґСЂСѓРі РїРѕРґ РґСЂСѓРіРѕРј.
         </br><code>var time = "15:30";</code>
         </br><code>var is_rainy = false;</code>
     </p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Правильные имена.</h2>
-    <p> Забронированные или служеюные имена:</p>
+    <h2>РџСЂР°РІРёР»СЊРЅС‹Рµ РёРјРµРЅР°.</h2>
+    <p> Р—Р°Р±СЂРѕРЅРёСЂРѕРІР°РЅРЅС‹Рµ РёР»Рё СЃР»СѓР¶РµСЋРЅС‹Рµ РёРјРµРЅР°:</p>
     <code>do if in for let new try var case else enum eval false null this true void with break catch class const super throw while yield delete export import public return static switch typeof default extends finally package private continue debugger function arguments interface protected implements instanceof</code>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Комментарии</h2>
-    <p>Однострочный комментарий:
-        </br><code>// Вылет назначен на вечер пятницы.</code>
+    <h2>РљРѕРјРјРµРЅС‚Р°СЂРёРё</h2>
+    <p>РћРґРЅРѕСЃС‚СЂРѕС‡РЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№:
+        </br><code>// Р’С‹Р»РµС‚ РЅР°Р·РЅР°С‡РµРЅ РЅР° РІРµС‡РµСЂ РїСЏС‚РЅРёС†С‹.</code>
     </p>
-    <p>Многострочный комментарий:
-        </br><code>/* Вылет назначен на вечер пятницы. </br> На девять вечера. </br> Боинг 747. */</code>
+    <p>РњРЅРѕРіРѕСЃС‚СЂРѕС‡РЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№:
+        </br><code>/* Р’С‹Р»РµС‚ РЅР°Р·РЅР°С‡РµРЅ РЅР° РІРµС‡РµСЂ РїСЏС‚РЅРёС†С‹. </br> РќР° РґРµРІСЏС‚СЊ РІРµС‡РµСЂР°. </br> Р‘РѕРёРЅРі 747. */</code>
     </p>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2>Хочу попробовать!</h2>
+    <h2>РҐРѕС‡Сѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ!</h2>
     <img src="pictures/lesson2/try.jpg"/>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color:#fff">Разве теперь я программист?</h2>
+    <h2 style="color:#fff">Р Р°Р·РІРµ С‚РµРїРµСЂСЊ СЏ РїСЂРѕРіСЂР°РјРјРёСЃС‚?</h2>
     <img src="pictures/lesson2/amiprogrammer.jpg"/>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Функции</h2>
+    <h2>Р¤СѓРЅРєС†РёРё</h2>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Служебные функции:</h2>
+    <h2>РЎР»СѓР¶РµР±РЅС‹Рµ С„СѓРЅРєС†РёРё:</h2>
     <ul>
         <li><code>alert</code></li>
         <li><code>setTimeout</code></li>
         <li><code>parseInt</code></li>
-        <li><code>eval</code> и др.</li>
+        <li><code>eval</code> Рё РґСЂ.</li>
     </ul>
-    <p class="next">Вызываем функцию: <code>alert ("Show me!");</code></p>
+    <p class="next">Р’С‹Р·С‹РІР°РµРј С„СѓРЅРєС†РёСЋ: <code>alert ("Show me!");</code></p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Моя первая функция</h2>
+    <h2>РњРѕСЏ РїРµСЂРІР°СЏ С„СѓРЅРєС†РёСЏ</h2>
     <code class="next">function </code>
     <code class="next">SayMyName</code>
     <code class="next"> ()</code>
     <code class="next"> {</code>
     </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">
-    // Частная собственность!
+    // Р§Р°СЃС‚РЅР°СЏ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚СЊ!
 </code>
     </br><code class="next">}</code>
     </br></br>
     <p class="next">
-        При обращении к имени <code>SayMyName</code>, будет выведено:
+        РџСЂРё РѕР±СЂР°С‰РµРЅРёРё Рє РёРјРµРЅРё <code>SayMyName</code>, Р±СѓРґРµС‚ РІС‹РІРµРґРµРЅРѕ:
         </br><code>function SayMyName () {...}</code>
     </p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Складываем слова в предложения:</h2>
+    <h2>РЎРєР»Р°РґС‹РІР°РµРј СЃР»РѕРІР° РІ РїСЂРµРґР»РѕР¶РµРЅРёСЏ:</h2>
     <code>function SayMyName (<i class="next">name</i>) {</code>
     </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">var str = name;</code>
     </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">str = "Hello" + name + "!";</code>
     </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">alert (str);</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="next"> // Вызываем функцию внутри другой функции </i>
+    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="next"> // Р’С‹Р·С‹РІР°РµРј С„СѓРЅРєС†РёСЋ РІРЅСѓС‚СЂРё РґСЂСѓРіРѕР№ С„СѓРЅРєС†РёРё </i>
     </br><code>}</code>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color: #fff">Зачем мне функции, если я могу писать код построчно?</h2>
+    <h2 style="color: #fff">Р—Р°С‡РµРј РјРЅРµ С„СѓРЅРєС†РёРё, РµСЃР»Рё СЏ РјРѕРіСѓ РїРёСЃР°С‚СЊ РєРѕРґ РїРѕСЃС‚СЂРѕС‡РЅРѕ?</h2>
     <img src="pictures/lesson2/question.jpg"/>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Освободи место для работы!</h2>
+    <h2>РћСЃРІРѕР±РѕРґРё РјРµСЃС‚Рѕ РґР»СЏ СЂР°Р±РѕС‚С‹!</h2>
     <p>
         </br><code>function MorningInstructions() {</code>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>// место для инструкций</code>
+        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>// РјРµСЃС‚Рѕ РґР»СЏ РёРЅСЃС‚СЂСѓРєС†РёР№</code>
         </br><code>}</code>
     </p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Разложи по полкам!</h2>
+    <h2>Р Р°Р·Р»РѕР¶Рё РїРѕ РїРѕР»РєР°Рј!</h2>
     <code>function Instructions() {</code>
     <ol>
         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>getUp();</code></li>
@@ -252,7 +252,7 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Используй, когда необходимо!</h2>
+    <h2>РСЃРїРѕР»СЊР·СѓР№, РєРѕРіРґР° РЅРµРѕР±С…РѕРґРёРјРѕ!</h2>
     <code>function Instructions() {</code>
     <ol>
         <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>getUp();</code></li>
@@ -266,31 +266,31 @@
 </div></section>
 
 <section class="slide cover"><div>
-    <h2>Хочу попробовать!</h2>
+    <h2>РҐРѕС‡Сѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ!</h2>
     <img src="pictures/lesson2/try.jpg"/>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Игры в да - нет</h2>
+    <h2>РРіСЂС‹ РІ РґР° - РЅРµС‚</h2>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Хочу и баста</h2>
+    <h2>РҐРѕС‡Сѓ Рё Р±Р°СЃС‚Р°</h2>
     <p>
-        Условие: <code>var do_you_want_love = true;</code>
+        РЈСЃР»РѕРІРёРµ: <code>var do_you_want_love = true;</code>
     </p>
     <p>
         </br><code>if (do_you_want_love) {</code>
         </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>take_some_love();</code>
         </br><code>}</code>
     </p>
-    <p class="next">Условие может истиной или ложью!</p>
+    <p class="next">РЈСЃР»РѕРІРёРµ РјРѕР¶РµС‚ РёСЃС‚РёРЅРѕР№ РёР»Рё Р»РѕР¶СЊСЋ!</p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Не лги мне, иначе!</h2>
+    <h2>РќРµ Р»РіРё РјРЅРµ, РёРЅР°С‡Рµ!</h2>
     <p>
-        Условие: <code>var can_you_play_basketball = false;</code>
+        РЈСЃР»РѕРІРёРµ: <code>var can_you_play_basketball = false;</code>
     </p>
     </br><code>if (can_you_play_basketball) {</code>
     </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>lets_play();</code>
@@ -300,87 +300,87 @@
 </div></section>
 
 <section class="slide cover"><div>
-    <h2>Хочу попробовать!</h2>
+    <h2>РҐРѕС‡Сѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ!</h2>
     <img src="pictures/lesson2/try.jpg"/>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Круговое движение</h2>
+    <h2>РљСЂСѓРіРѕРІРѕРµ РґРІРёР¶РµРЅРёРµ</h2>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Циклы</h2>
-    <p>В отличие от условий, можно повторять:</p>
+    <h2>Р¦РёРєР»С‹</h2>
+    <p>Р’ РѕС‚Р»РёС‡РёРµ РѕС‚ СѓСЃР»РѕРІРёР№, РјРѕР¶РЅРѕ РїРѕРІС‚РѕСЂСЏС‚СЊ:</p>
     </br><code>for(var i = 0; i < 100; i++) {</code>
     </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>...</code>
     </br><code>}</code>
 </div></section>
 
 <section class="slide"><div>
-    <p>В обратном порядке:</p>
+    <p>Р’ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ:</p>
     </br><code>for(var i = 100; i > 0; i--) {</code>
     </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>...</code>
     </br><code>}</code>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Атака массивов</h2>
+    <h2>РђС‚Р°РєР° РјР°СЃСЃРёРІРѕРІ</h2>
 </div></section>
 
 <section class="slide"><div>
-    </br><code>"цветок", "черный дипломат", "очки", "плащ"</code>
-    </br><code>"леон", "матильда", "стетфилд", "цветок"</code>
+    </br><code>"С†РІРµС‚РѕРє", "С‡РµСЂРЅС‹Р№ РґРёРїР»РѕРјР°С‚", "РѕС‡РєРё", "РїР»Р°С‰"</code>
+    </br><code>"Р»РµРѕРЅ", "РјР°С‚РёР»СЊРґР°", "СЃС‚РµС‚С„РёР»Рґ", "С†РІРµС‚РѕРє"</code>
     </br><code>1, 2, 3, 4</code>
-    <p class="next">Всё это напоминает очередь</p>
+    <p class="next">Р’СЃС‘ СЌС‚Рѕ РЅР°РїРѕРјРёРЅР°РµС‚ РѕС‡РµСЂРµРґСЊ</p>
 </div></section>
 
 <section class="slide"><div>
-    <p>Беспорядочный список:
-        </br><code class="next">"цветок", "черный дипломат", "очки", "плащ"</code>
+    <p>Р‘РµСЃРїРѕСЂСЏРґРѕС‡РЅС‹Р№ СЃРїРёСЃРѕРє:
+        </br><code class="next">"С†РІРµС‚РѕРє", "С‡РµСЂРЅС‹Р№ РґРёРїР»РѕРјР°С‚", "РѕС‡РєРё", "РїР»Р°С‰"</code>
     </p>
-    <p>Упорядочный список:
-        </br><code class="next">"подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"</code>
-    </p>
-</div></section>
-
-<section class="slide"><div>
-    <p>Окаймляем в скобки:
-        </br><code class="next">["подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"];</code>
-    </p>
-    <p>Записываем в переменную:
-        </br><code class="next">var morning = ["подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"];</code>
+    <p>РЈРїРѕСЂСЏРґРѕС‡РЅС‹Р№ СЃРїРёСЃРѕРє:
+        </br><code class="next">"РїРѕРґСЉС‘Рј", "СѓРїСЂРѕР¶РЅРµРЅРёСЏ РЅР° РїСЂРµСЃСЃ", "РІ РјР°РіР°Р·РёРЅ Р·Р° РјРѕР»РѕРєРѕРј", "Р·Р°РІС‚СЂР°Рє"</code>
     </p>
 </div></section>
 
 <section class="slide"><div>
-    <p>Утренний распорядок:
-        </br><code class="next">var morning = ["подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"];</code>
+    <p>РћРєР°Р№РјР»СЏРµРј РІ СЃРєРѕР±РєРё:
+        </br><code class="next">["РїРѕРґСЉС‘Рј", "СѓРїСЂРѕР¶РЅРµРЅРёСЏ РЅР° РїСЂРµСЃСЃ", "РІ РјР°РіР°Р·РёРЅ Р·Р° РјРѕР»РѕРєРѕРј", "Р·Р°РІС‚СЂР°Рє"];</code>
+    </p>
+    <p>Р—Р°РїРёСЃС‹РІР°РµРј РІ РїРµСЂРµРјРµРЅРЅСѓСЋ:
+        </br><code class="next">var morning = ["РїРѕРґСЉС‘Рј", "СѓРїСЂРѕР¶РЅРµРЅРёСЏ РЅР° РїСЂРµСЃСЃ", "РІ РјР°РіР°Р·РёРЅ Р·Р° РјРѕР»РѕРєРѕРј", "Р·Р°РІС‚СЂР°Рє"];</code>
+    </p>
+</div></section>
+
+<section class="slide"><div>
+    <p>РЈС‚СЂРµРЅРЅРёР№ СЂР°СЃРїРѕСЂСЏРґРѕРє:
+        </br><code class="next">var morning = ["РїРѕРґСЉС‘Рј", "СѓРїСЂРѕР¶РЅРµРЅРёСЏ РЅР° РїСЂРµСЃСЃ", "РІ РјР°РіР°Р·РёРЅ Р·Р° РјРѕР»РѕРєРѕРј", "Р·Р°РІС‚СЂР°Рє"];</code>
     </p>
     </br>
     <ul class="next">
-        <li>morning[0] => "подъём"</li>
-        <li>morning[1] => "упрожнения на пресс"</li>
-        <li>morning[2] => "в магазин за молоком"</li>
-        <li>morning[3] => "завтрак"</li>
+        <li>morning[0] => "РїРѕРґСЉС‘Рј"</li>
+        <li>morning[1] => "СѓРїСЂРѕР¶РЅРµРЅРёСЏ РЅР° РїСЂРµСЃСЃ"</li>
+        <li>morning[2] => "РІ РјР°РіР°Р·РёРЅ Р·Р° РјРѕР»РѕРєРѕРј"</li>
+        <li>morning[3] => "Р·Р°РІС‚СЂР°Рє"</li>
     </ul>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2>Хочу попробовать!</h2>
+    <h2>РҐРѕС‡Сѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ!</h2>
     <img src="pictures/lesson2/try.jpg"/>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color:#eee">... функции, переменные, циклы и условия, массивы - но ты еще не программист!</h2>
+    <h2 style="color:#eee">... С„СѓРЅРєС†РёРё, РїРµСЂРµРјРµРЅРЅС‹Рµ, С†РёРєР»С‹ Рё СѓСЃР»РѕРІРёСЏ, РјР°СЃСЃРёРІС‹ - РЅРѕ С‚С‹ РµС‰Рµ РЅРµ РїСЂРѕРіСЂР°РјРјРёСЃС‚!</h2>
     <img src="pictures/lesson2/advice.jpg"/>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Поток</h2>
+    <h2>РџРѕС‚РѕРє</h2>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Всё есть поток</h2>
+    <h2>Р’СЃС‘ РµСЃС‚СЊ РїРѕС‚РѕРє</h2>
     <ol>
         <code>function LearningEnglish ()</code></br>
         <code>{</code></br>
@@ -394,7 +394,7 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Поток един</h2>
+    <h2>РџРѕС‚РѕРє РµРґРёРЅ</h2>
     <code class="next">LearningEnglish ()</code>
     </br></br>
         <pre>
@@ -407,11 +407,11 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Так для чего же нам функции?</h2>
+    <h2>РўР°Рє РґР»СЏ С‡РµРіРѕ Р¶Рµ РЅР°Рј С„СѓРЅРєС†РёРё?</h2>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Используй, когда необходимо!</h2>
+    <h2>РСЃРїРѕР»СЊР·СѓР№, РєРѕРіРґР° РЅРµРѕР±С…РѕРґРёРјРѕ!</h2>
     </br><code class="next">function what() &nbsp;&nbsp;&nbsp;&nbsp;{ alert("what"); }</code>
     </br><code class="next">function is() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ alert("is"); }</code>
     </br><code class="next">function your() &nbsp;&nbsp;&nbsp;&nbsp;{ alert("your"); }</code>
@@ -422,7 +422,7 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Поехали!</h2>
+    <h2>РџРѕРµС…Р°Р»Рё!</h2>
         <pre>
             <code class="next">what();</code>
             <code class="next">is();</code>
@@ -434,7 +434,7 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Всё те же функции</h2>
+    <h2>Р’СЃС‘ С‚Рµ Р¶Рµ С„СѓРЅРєС†РёРё</h2>
         <pre>
             <code class="next">my();</code>
             <code class="next">name();</code>
@@ -445,55 +445,55 @@
 </div></section>
 
 <section class="slide cover"><div>
-    <h2>Хочу попробовать!</h2>
+    <h2>РҐРѕС‡Сѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ!</h2>
     <img src="pictures/lesson2/try.jpg"/>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Всему свое время</h2>
+    <h2>Р’СЃРµРјСѓ СЃРІРѕРµ РІСЂРµРјСЏ</h2>
 </div></section>
 
 <section class="slide shout"><div>
-    <h2>Ставим таймер</h2>
+    <h2>РЎС‚Р°РІРёРј С‚Р°Р№РјРµСЂ</h2>
 </div></section>
 
 <section class="slide"><div>
-    <p>Приготовься:
+    <p>РџСЂРёРіРѕС‚РѕРІСЊСЃСЏ:
         </br><code>function makeAShot () {</code>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>alert("испорчена еще одна рубашка!");</code>
+        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>alert("РёСЃРїРѕСЂС‡РµРЅР° РµС‰Рµ РѕРґРЅР° СЂСѓР±Р°С€РєР°!");</code>
         </br><code>}</code>
     </p>
-    <p>Дождись момента между ударами сердца:
+    <p>Р”РѕР¶РґРёСЃСЊ РјРѕРјРµРЅС‚Р° РјРµР¶РґСѓ СѓРґР°СЂР°РјРё СЃРµСЂРґС†Р°:
         </br><code>setTimeout(makeAShot, 5000);</code>
     </p>
 </div></section>
 
 <section class="slide"><div>
-    <p>тренний распорядок:
+    <p>С‚СЂРµРЅРЅРёР№ СЂР°СЃРїРѕСЂСЏРґРѕРє:
         </br><code>function morning () {</code>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>alert("купить и выпить стакан молока!");</code>
+        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>alert("РєСѓРїРёС‚СЊ Рё РІС‹РїРёС‚СЊ СЃС‚Р°РєР°РЅ РјРѕР»РѕРєР°!");</code>
         </br><code>}</code>
     </p>
-    <p>Каждое утро:
+    <p>РљР°Р¶РґРѕРµ СѓС‚СЂРѕ:
         </br><code>setInterval(makeAShot, 5000);</code>
     </p>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2>Хочу попробовать!</h2>
+    <h2>РҐРѕС‡Сѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ!</h2>
     <img src="pictures/lesson2/try.jpg"/>
 </div></section>
 
 <section class="slide cover"><div>
-    <h2 style="color:#eee">..каждый день по стакану молока!</h2>
+    <h2 style="color:#eee">..РєР°Р¶РґС‹Р№ РґРµРЅСЊ РїРѕ СЃС‚Р°РєР°РЅСѓ РјРѕР»РѕРєР°!</h2>
     <img src="pictures/lesson2/advice.jpg"/>
 </div></section>
 <!--
     To hide progress bar from entire presentation
-    just remove “progress” element.
+    just remove вЂњprogressвЂќ element.
     -->
 <div class="progress"><div></div></div>
 <script src="shower/shower.min.js"></script>
-<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+<!-- Copyright В© 2013 Yours Truly, Famous Inc. -->
 </body>
 </html>
