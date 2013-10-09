@@ -107,68 +107,106 @@
 
 <section class="slide"><div>
     <h2>Объявляем и присваиваем.</h2>
-    <code>var day = 10,</code></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<code>month = 07,</code></br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<code>year = 2013;</code></br>
+    <pre>
+        <code>var day = 10,</code>
+        <code>    month = 07,</code>
+        <code>    year = 2013;</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
     <h2>Слабая типизация.</h2>
-    <code>var day;</code></br>
-    <code class="next">day = 10;</code></br>
-    <code class="next">day = "10";</code></br>
-    <code class="next">day = "среда.";</code></br>
-    <code class="next">day = "третий день от воскресенья!";</code></br>
-    </br>
-    <p class="next"><code>day = true;</code><note>&nbsp;&nbsp;// логическе значение</note></p>
+    <pre>
+        <code>var day;</code>
+        <code class="next">day = 10;</code>
+        <code class="next">day = "10";</code>
+        <code class="next">day = "среда.";</code>
+        <code class="next">day = "третий день от воскресенья!";</code>
+    </pre>
+    <p class="next"><code>day = true;  <note>// логическе значение</note></code></p>
 </div></section>
 
 <section class="slide"><div>
     <h2>Операции над переменными</h2>
     <code>var year = 2013;</code>
-    <p class="next">Перенесёмся в будущее.
-        </br><code>year + 10;</code><em class="next">&nbsp;&nbsp; // Результат операции никуда не сохранен!</em>
-    </p>
-    <p class="next">Сохраняем результат.
-        </br><code>var future = year + 10;</code><em class="note">&nbsp;&nbsp; // future = 2023</em>
-    </p>
+    <pre class="next">
+        <b>Перенесёмся в будущее.</b>
+        <code>year + 10;  <em class="next">// Результат операции никуда не сохранен!</em></code>
+    </pre>
+    <pre class="next">
+        <b>Сохраняем результат.</b>
+        <code>var <mark class="important">future</mark> = year + 10;  <em class="note">// future = 2023</em></code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
     <h2>Слово не воробей!</h2>
     <code>var future = 2023;</code>
-    <p class="next">Здесь всё понятно, полетели дальше.
-        </br><code>var far_future = Future + 10;</code>
-    </p>
-    <p class="next">&nbsp;&nbsp;Результат операции  - <mark>ошибка!</mark></p>
-    <p class="next">Назвался с маленькой буквы, носи такое имя.
-        </br><code>var far_future = future + 10;</code>
-    </p>
+    <pre class="next">
+        <em>Здесь всё понятно, полетели дальше.</em>
+        <code>var far_future = Future + 10;</code>
+
+        <code class="next">Результат операции  - <mark class="important">ошибка</mark>!</code>
+
+        <b class="next">Назвался с маленькой буквы, носи такое имя.</b>
+        <code class="next">var far_future = <mark>future</mark> + 10;</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
     <h2>Синтаксис</h2>
     <p class="next"> Каждая фраза имеет логическое завершение - <code>;</code></p>
-    <p class="next"> Фразы располагаются друг под другом.
-        </br><code>var time = "15:30";</code>
-        </br><code>var is_rainy = false;</code>
-    </p>
+    <pre class="next">
+        <em>Фразы располагаются друг под другом.</em>
+        <code>var time = "15:30";</code>
+        <code>var is_rainy = false;</code>
+    </pre>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2>Думай наперед</h2>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Правильные имена.</h2>
+    <p> Обдумывай каждое название</p>
+    <h2 class="next">Красота в деталях:</h2>
+    <pre>
+        <code class="next">var symbols = "a bc defgh ijk lmnopqrst uvwxy z";</code>
+        <code class="next">var symbols = ["a", "bc", "defgh", ...];</code>
+        <code class="next">var <mark>alt_str</mark> = "a bc defgh ijk lmnopqrst uvwxy z";</code>
+        <code class="next">var <mark>alt_arr</mark> = ["a", "bc", "defgh", ...];</code>
+    </pre>
+</div></section>
+
+<section class="slide"><div>
+    <h2>думай о Контексте</h2>
+</div></section>
+
+<section class="slide"><div>
+    <h2 class="next">$</h2>
+    <p> Дай шанс быть узнанной:</p>
+    <pre>
+        <code class="next">var nav = $("#main nav");  <note>// Что представляет nav?</note></code>
+        <code class="next">var <mark>$footer</mark> = $("#main footer");</code>
+    </pre>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Неправильные имена.</h2>
     <p> Забронированные или служеюные имена:</p>
     <code>do if in for let new try var case else enum eval false null this true void with break catch class const super throw while yield delete export import public return static switch typeof default extends finally package private continue debugger function arguments interface protected implements instanceof</code>
 </div></section>
 
 <section class="slide"><div>
     <h2>Комментарии</h2>
-    <p>Однострочный комментарий:
-        </br><code>// Вылет назначен на вечер пятницы.</code>
-    </p>
-    <p>Многострочный комментарий:
-        </br><code>/* Вылет назначен на вечер пятницы. </br> На девять вечера. </br> Боинг 747. */</code>
-    </p>
+    <pre>
+        <em>Однострочный комментарий:</em>
+        <code>// Вылет назначен на вечер пятницы.</code>
+    </pre>
+    <pre>
+        <em>Многострочный комментарий:</em>
+        <code>/* Вылет назначен на вечер пятницы. </br> На девять вечера. </br> Боинг 747. */</code>
+    </pre>
 </div></section>
 
 <section class="slide cover"><div>
@@ -186,41 +224,49 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Служебные функции:</h2>
+    <h2>Логирование - поиск ошибок:</h2>
     <ul>
         <li><code>alert</code></li>
-        <li><code>setTimeout</code></li>
-        <li><code>parseInt</code></li>
-        <li><code>eval</code> и др.</li>
+        <li><code>console.log</code></li>
+        <li><code>try {..} catch () {..}</code></li>
+        <li>и др.</li>
     </ul>
     <p class="next">Вызываем функцию: <code>alert ("Show me!");</code></p>
 </div></section>
 
 <section class="slide"><div>
+    <h2>Любые функции:</h2>
+    <ul>
+        <li><code><mark class="important">$</mark></code> <code class="next">-> <mark class="important">$(</mark>"h2"<mark class="important">)</mark></code></li>
+        <li><code>$(document).<mark class="important">ready</mark></code> <code class="next">-> $(document).<mark class="important">ready(</mark>..<mark class="important">)</mark></code></li>
+        <li><code>$("h1").<mark class="important">remove</mark></code> <code class="next">-> $("h1").<mark class="important">remove()</mark></code></li>
+        <li><code>$("h1").<mark class="important">css</mark></code> <code class="next">-> $("h1").<mark class="important">css(</mark>"opacity", .5<mark class="important">)</mark></code></li>
+        <li>и др.</li>
+    </ul>
+</div></section>
+
+<section class="slide"><div>
     <h2>Моя первая функция</h2>
-    <code class="next">function </code>
-    <code class="next">SayMyName</code>
-    <code class="next"> ()</code>
-    <code class="next"> {</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">
-    // Частная собственность!
-</code>
-    </br><code class="next">}</code>
-    </br></br>
-    <p class="next">
-        При обращении к имени <code>SayMyName</code>, будет выведено:
-        </br><code>function SayMyName () {...}</code>
-    </p>
+    <pre>
+        <code class="next">function <em class="next">SayMyName <mark class="next">()</mark> <mark class="next">{</mark></em> </code>
+        <code class="next">  // Частная собственность!</code>
+        <code class="next">}</code>
+    </pre>
+    <pre class="next">
+        <b>При обращении к имени <mark>SayMyName</mark>, будет выведено:</b>
+        <code>function SayMyName () {...}</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
     <h2>Складываем слова в предложения:</h2>
-    <code>function SayMyName (<i class="next">name</i>) {</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">var str = name;</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">str = "Hello" + name + "!";</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="next">alert (str);</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="next"> // Вызываем функцию внутри другой функции </i>
-    </br><code>}</code>
+    <pre>
+        <code>function <mark>SayMyName</mark> (<i class="next">name</i>) {</code>
+        <code class="next">  var str = name;</code>
+        <code class="next">  str = "Hello" + name + "!";</code>
+        <code class="next">  <mark class="important">alert</mark> (str);  <i class="next">// Вызываем функцию внутри другой функции </i></code>
+        <code>}</code>
+    </pre>
 </div></section>
 
 <section class="slide cover"><div>
@@ -230,39 +276,53 @@
 
 <section class="slide"><div>
     <h2>Освободи место для работы!</h2>
-    <p>
-        </br><code>function MorningInstructions() {</code>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>// место для инструкций</code>
-        </br><code>}</code>
-    </p>
+    <pre>
+        <code>function <mark>MorningInstructions</mark> () {</code>
+        <code>  // место для работы</code>
+        <code>}</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
     <h2>Разложи по полкам!</h2>
     <code>function Instructions() {</code>
-    <ol>
-        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>getUp();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>doExercise();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>cleanTeeth();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>makeCoffee();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>dressUp();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>makeASmile();</code></li>
-        <code>}</code>
-    </ol>
+    <pre>
+        <code class="next">  getUp();</code>
+        <code class="next">  doExercise();</code>
+        <code class="next">  cleanTeeth();</code>
+        <code class="next">  makeCoffee();</code>
+        <code class="next">  dressUp();</code>
+        <code class="next">  makeASmile();</code>
+        <code class="next">}</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
     <h2>Используй, когда необходимо!</h2>
     <code>function Instructions() {</code>
-    <ol>
-        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>getUp();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code><s>doExercise();</s></code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>makeASmile();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>makeCoffee();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>dressUp();</code></li>
-        <li class="next">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>cleanTeeth();</code></li>
-        <code>}</code>
-    </ol>
+    <pre>
+        <code class="next">  getUp();</code>
+        <code class="next">  <s>doExercise();</s></code>
+        <code class="next">  makeCoffee();</code>
+        <code class="next">  makeASmile();</code>
+        <code class="next">  cleanTeeth();</code>
+        <code class="next">  dressUp();</code>
+        <code class="next">}</code>
+    </pre>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Используй, когда необходимо!</h2>
+    <code>function Instructions() {</code>
+    <pre>
+        <code class="next">  getUp();</code>
+        <code class="next">  makeASmile();</code>
+        <code class="next">  <s>doExercise();</s></code>
+        <code class="next">  <s>makeCoffee();</s></code>
+        <code class="next">  <s>cleanTeeth();</s></code>
+        <code class="next">  <s>dressUp();</s></code>
+        <code class="next">}</code>
+    </pre>
 </div></section>
 
 <section class="slide cover"><div>
@@ -279,24 +339,46 @@
     <p>
         Условие: <code>var do_you_want_love = true;</code>
     </p>
-    <p>
-        </br><code>if (do_you_want_love) {</code>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>take_some_love();</code>
-        </br><code>}</code>
-    </p>
-    <p class="next">Условие может истиной или ложью!</p>
+    <pre class="next">
+        <code>if (do_you_want_love) {</code>
+        <code>  take_some_love();</code>
+        <code>}</code>
+    </pre>
+    <p class="next">Условие может <code>истиной</code> или <code>ложью</code>!</p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Не лги мне, иначе!</h2>
-    <p>
-        Условие: <code>var can_you_play_basketball = false;</code>
+    <h2>Делай больше</h2>
+    <pre class="next">
+        <code>function LoveController (make_love) {</code>
+        <code>  if (make_love) {</code>
+        <code>    <mark class="important">take_some_love</mark>();</code>
+        <code>  }</code>
+        <code>}</code>
+    </pre>
+    <p class="next">
+        Используем: <code>LoveController(true);</code>
     </p>
-    </br><code>if (can_you_play_basketball) {</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>lets_play();</code>
-    </br><code>} else {</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>take_a_lesson();</code>
-    </br><code>}</code>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2>Формулируем вопрос</h2>
+</div></section>
+
+<section class="slide"><div>
+    <pre>
+        <code>Условие: <mark>var can_you_play = false;</mark></code>
+        <code>Условие: <mark>var wanna_learn  = true;</mark></code>
+    </pre>
+    <pre class="next">
+        <code>if (can_you_play) {</code>
+        <code>  <mark class="important">lets_play</mark>();</code>
+        <code>} else if (wanna_learn) {</code>
+        <code>  <mark class="important">take_a_lesson</mark>();</code>
+        <code>} else {</code>
+        <code>  <mark class="important">go_home</mark>();</code>
+        <code>}</code>
+    </pre>
 </div></section>
 
 <section class="slide cover"><div>
@@ -310,17 +392,37 @@
 
 <section class="slide"><div>
     <h2>Циклы</h2>
-    <p>В отличие от условий, можно повторять:</p>
-    </br><code>for(var i = 0; i < 100; i++) {</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>...</code>
-    </br><code>}</code>
+    <pre>
+        <em>Возможность повторять однотипные действия:</em>
+        <code>for(var i = 0; i < 100; <mark>i++</mark>) {</code>
+        <code>  ...</code>
+        <code>}</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
-    <p>В обратном порядке:</p>
-    </br><code>for(var i = 100; i > 0; i--) {</code>
-    </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>...</code>
-    </br><code>}</code>
+    <pre>
+        <em>В обратном порядке:</em>
+        <code>for(var i = 100; i > 0; <mark>i--</mark>) {</code>
+        <code>  ...</code>
+        <code>}</code>
+    </pre>
+</div></section>
+
+<section class="slide"><div>
+    <h2>Аналог в jQuery:</h2>
+    <pre>
+        <code>.<mark>each</mark>(); <note class="next"> // Да, это тоже функция!</note></code>
+    </pre>
+    <pre class="next">
+        <em>Используем для коллекции:</em>
+        <code>$(<mark class="next">"h2"</mark>).<mark class="next">each</mark>(<mark class="next">function (..) {..}</mark>);</code>
+    </pre>
+    <pre class="next">
+        <em>Количство элементов в коллекции <mark class="important">==</mark> количеству вызовов.</em>
+        <code><mark>function</mark> (<mark class="important">i</mark>, <mark class="important">e</mark>) { .. }</code>
+        <note><mark>i</mark> - индекс, <mark>e</mark> - элемент</note>
+    </pre>
 </div></section>
 
 <section class="slide shout"><div>
@@ -328,41 +430,50 @@
 </div></section>
 
 <section class="slide"><div>
-    </br><code>"цветок", "черный дипломат", "очки", "плащ"</code>
-    </br><code>"леон", "матильда", "стетфилд", "цветок"</code>
-    </br><code>1, 2, 3, 4</code>
-    <p class="next">Всё это напоминает очередь</p>
+    <pre>
+        <code>"цветок", "черный дипломат", "очки", "плащ"</code>
+        <code class="next">"леон", "матильда", "стетфилд", "фикус"</code>
+        <code class="next">1, 2, 3, 4</code>
+        <note class="next"><mark>Всё это напоминает очередь</mark></note>
+        <note class="next"><mark class="important">Так и есть!</mark></note>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
-    <p>Беспорядочный список:
-        </br><code class="next">"цветок", "черный дипломат", "очки", "плащ"</code>
-    </p>
-    <p>Упорядочный список:
-        </br><code class="next">"подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"</code>
-    </p>
+    <pre>
+        <b>Беспорядочный список:</b>
+        <code class="next">"цветок", "черный дипломат", "очки", "плащ"</code>
+    </pre>
+    <pre class="next">
+        <b>Упорядочный список:</b>
+        <code>"подъём", "упрожнения на пресс", "в магазин за молоком",</br> "завтрак"</code>
+    </pre>
+    <p class="next"><code>Совершенно неважно!</code></p>
 </div></section>
 
 <section class="slide"><div>
-    <p>Окаймляем в скобки:
-        </br><code class="next">["подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"];</code>
-    </p>
-    <p>Записываем в переменную:
-        </br><code class="next">var morning = ["подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"];</code>
-    </p>
+    <pre class="next">
+        <note>Окаймляем в скобки:</note>
+        <code><mark>[</mark>"подъём", "упрожнения на пресс", "в магазин за молоком",</br> "завтрак"<mark>]</mark>;</code>
+    </pre>
+    <pre class="next">
+        <note>Записываем в переменную:</note>
+        <code>var <mark class="important">morning</mark> = <mark>[</mark>"подъём", "упрожнения на пресс", "в магазин за молоком",</br> "завтрак"<mark>]</mark>;</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
-    <p>Утренний распорядок:
-        </br><code class="next">var morning = ["подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"];</code>
-    </p>
-    </br>
-    <ul class="next">
-        <li>morning[0] => "подъём"</li>
-        <li>morning[1] => "упрожнения на пресс"</li>
-        <li>morning[2] => "в магазин за молоком"</li>
-        <li>morning[3] => "завтрак"</li>
-    </ul>
+    <pre>
+        <note>Утренний распорядок:</note>
+        <code class="next">var <mark>morning</mark> = ["подъём", "упрожнения на пресс", "в магазин за молоком", "завтрак"];</code>
+    </pre>
+
+    <pre>
+        <code class="next">morning<mark>[0]</mark> <note>// -> "подъём"</note></code>
+        <code class="next">morning<mark>[1]</mark> <note>// -> "упрожнения на пресс"</note></code>
+        <code class="next">morning<mark>[2]</mark> <note>// -> "в магазин за молоком"</note></code>
+        <code class="next">morning<mark>[3]</mark> <note>// -> "завтрак"</note></code>
+    </pre>
 </div></section>
 
 <section class="slide cover"><div>
@@ -381,16 +492,15 @@
 
 <section class="slide"><div>
     <h2>Всё есть поток</h2>
-    <ol>
-        <code>function LearningEnglish ()</code></br>
-        <code>{</code></br>
-        <code>var i_am_saying;</code></br>
-        <code>i_am_saying = "Dream it.";</code></br>
-        <code>i_am_saying = i_am_saying + " Wish it.";</code></br>
-        <code>i_am_saying = i_am_saying + " Do it.";</code></br>
-        <code>alert(i_am_saying);</code></br>
+    <pre>
+        <code>function LearningEnglish () {</code>
+        <code class="next">  var <mark>i_am_saying</mark>;</code>
+        <code class="next">  <mark>i_am_saying</mark> = "Dream it.";</code>
+        <code class="next">  <mark>i_am_saying</mark> = i_am_saying + " Wish it.";</code>
+        <code class="next">  <mark>i_am_saying</mark> = i_am_saying + " Do it.";</code>
+        <code class="next">  alert(<mark>i_am_saying</mark>);</code>
         <code>}</code>
-    </ol>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
@@ -411,14 +521,16 @@
 </div></section>
 
 <section class="slide"><div>
-    <h2>Используй, когда необходимо!</h2>
-    </br><code class="next">function what() &nbsp;&nbsp;&nbsp;&nbsp;{ alert("what"); }</code>
-    </br><code class="next">function is() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ alert("is"); }</code>
-    </br><code class="next">function your() &nbsp;&nbsp;&nbsp;&nbsp;{ alert("your"); }</code>
-    </br><code class="next">function name() &nbsp;&nbsp;&nbsp;&nbsp;{ alert("my"); }</code>
-    </br><code class="next">function question() { alert("?"); }</code>
-    </br><code class="next">function Leon() &nbsp;&nbsp;&nbsp;{ alert("Leon"); }</code>
-    </br><code class="next">function woohoo() &nbsp;&nbsp;{ alert("!"); }</code>
+    <h2>Будь в потоке<b class="next">, <b style="color:#9ca8ff">управляй действиями</b>!</b></h2>
+    <pre>
+        <code class="next">function <mark>what</mark>()     { alert("what"); }</code>
+        <code class="next">function <mark>is</mark>()       { alert("is"); }</code>
+        <code class="next">function <mark>your</mark>()     { alert("your"); }</code>
+        <code class="next">function <mark>name</mark>()     { alert("name"); }</code>
+        <code class="next">function <mark>question</mark>() { alert("?"); }</code>
+        <code class="next">function <mark>Leon</mark>()     { alert("Leon"); }</code>
+        <code class="next">function <mark>woohoo</mark>()   { alert("!"); }</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
@@ -429,7 +541,8 @@
             <code class="next">your();</code>
             <code class="next">name();</code>
             <code class="next">question();</code>
-            <p class="note next">What is your name ?</p>
+            </br>
+            <code class="next">// <mark>What is your name?</mark></code>
         </pre>
 </div></section>
 
@@ -440,7 +553,9 @@
             <code class="next">name();</code>
             <code class="next">is();</code>
             <code class="next">Leon();</code>
-            <p class="note next">My name is Leon !</p>
+            <code class="next">woohoo();</code>
+            </br>
+            <code class="next">// <mark>My name is Leon!</mark></code>
         </pre>
 </div></section>
 
@@ -458,30 +573,37 @@
 </div></section>
 
 <section class="slide"><div>
-    <p>Приготовься:
-        </br><code>function makeAShot () {</code>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>alert("испорчена еще одна рубашка!");</code>
-        </br><code>}</code>
-    </p>
-    <p>Дождись момента между ударами сердца:
-        </br><code>setTimeout(makeAShot, 5000);</code>
-    </p>
+    <pre>
+        <em>Приготовься:</em>
+        <code>function <mark>makeAShot</mark> () {</code>
+        <code>  alert("испорчена еще одна рубашка!");</code>
+        <code>}</code>
+    </pre>
+    <pre class="next">
+        <em>Дождись момента между ударами сердца:</em>
+        <code>setTimeout(<mark>makeAShot</mark>, 5000);</code>
+    </pre>
 </div></section>
 
 <section class="slide"><div>
-    <p>тренний распорядок:
-        </br><code>function morning () {</code>
-        </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>alert("купить и выпить стакан молока!");</code>
-        </br><code>}</code>
-    </p>
-    <p>Каждое утро:
-        </br><code>setInterval(makeAShot, 5000);</code>
-    </p>
+    <pre>тренний распорядок:
+        <code>function <mark>morning</mark> () {</code>
+        <code>  alert("купить и выпить стакан молока!");</code>
+        <code>}</code>
+    </pre>
+    <pre class="next">
+        <em>Каждое утро:</em>
+        <code>setInterval(<mark>makeAShot</mark>, 5000);</code>
+    </pre>
 </div></section>
 
 <section class="slide cover"><div>
     <h2>Хочу попробовать!</h2>
     <img src="pictures/lesson2/try.jpg"/>
+</div></section>
+
+<section class="slide shout"><div>
+    <h2>хотите совет от Леона?</h2>
 </div></section>
 
 <section class="slide cover"><div>
